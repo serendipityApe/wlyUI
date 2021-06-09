@@ -1,0 +1,12 @@
+@font-face{
+    font-family: "PatrickHandSC";
+    src:url('PatrickHandSC-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face{
+    font-family: "FZSJ-ZHIWNDXSG";
+    src:url('FZSJ-ZHIWNDXSG.ttf');
+    font-weight: 600;
+    font-style: normal;
+}

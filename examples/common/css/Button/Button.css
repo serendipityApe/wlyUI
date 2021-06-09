@@ -1,0 +1,182 @@
+.wly-button {
+  font-family: 'FZSJ-ZHIWNDXSG','PatrickHandSC', cursive;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  padding: .6rem .8rem;
+  font-size: 1.5rem;
+  margin: 1rem 1rem;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+  letter-spacing: 1px;
+  outline: none;
+  color: #41403E;
+  border-color: #41403E;
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+}
+
+.wly-button.mini {
+  padding: .6rem .8rem;
+  font-size: 1.2rem;
+}
+
+.wly-button.large {
+  padding: 1rem;
+  font-size: 2rem;
+}
+
+.wly-button--primary {
+  background-color: #409eff;
+  border-color: #409eff;
+  color: white;
+}
+
+.wly-button--success {
+  background-color: #67c23a;
+  border-color: #67c23a;
+  color: white;
+}
+
+.wly-button--warning {
+  background-color: #e6a23c;
+  border-color: #e6a23c;
+  color: white;
+}
+
+.wly-button--danger {
+  background-color: #f56c6c;
+  border-color: #f56c6c;
+  color: white;
+}
+
+.wly-button--dotted {
+  background: transparent;
+  border-width: 2px;
+  border-style: dotted;
+}
+
+.wly-button--dotted.thick {
+  border-width: 5px;
+  border-style: dotted;
+}
+
+.wly-button--dotted.wly-button--primary {
+  border-color: #409eff;
+  color: #409eff;
+}
+
+.wly-button--dotted.wly-button--success {
+  border-color: #67c23a;
+  color: #67c23a;
+}
+
+.wly-button--dotted.wly-button--warning {
+  border-color: #e6a23c;
+  color: #e6a23c;
+}
+
+.wly-button--dotted.wly-button--danger {
+  border-color: #f56c6c;
+  color: #f56c6c;
+}
+
+.wly-button--dashed {
+  background: transparent;
+  border-width: 2px;
+  border-style: dashed;
+}
+
+.wly-button--dashed.thick {
+  border-width: 5px;
+  border-style: dashed;
+}
+
+.wly-button--dashed.wly-button--primary {
+  border-color: #409eff;
+  color: #409eff;
+}
+
+.wly-button--dashed.wly-button--success {
+  border-color: #67c23a;
+  color: #67c23a;
+}
+
+.wly-button--dashed.wly-button--warning {
+  border-color: #e6a23c;
+  color: #e6a23c;
+}
+
+.wly-button--dashed.wly-button--danger {
+  border-color: #f56c6c;
+  color: #f56c6c;
+}
+
+.wly-button--double {
+  background: transparent;
+  border-width: 2px;
+  border-style: double;
+}
+
+.wly-button--double.thick {
+  border-width: 5px;
+  border-style: double;
+}
+
+.wly-button--double.wly-button--primary {
+  border-color: #409eff;
+  color: #409eff;
+}
+
+.wly-button--double.wly-button--success {
+  border-color: #67c23a;
+  color: #67c23a;
+}
+
+.wly-button--double.wly-button--warning {
+  border-color: #e6a23c;
+  color: #e6a23c;
+}
+
+.wly-button--double.wly-button--danger {
+  border-color: #f56c6c;
+  color: #f56c6c;
+}
+
+.wly-button--solid {
+  background: transparent;
+  border-width: 2px;
+  border-style: solid;
+}
+
+.wly-button--solid.thick {
+  border-width: 5px;
+  border-style: solid;
+}
+
+.wly-button--solid.wly-button--primary {
+  border-color: #409eff;
+  color: #409eff;
+}
+
+.wly-button--solid.wly-button--success {
+  border-color: #67c23a;
+  color: #67c23a;
+}
+
+.wly-button--solid.wly-button--warning {
+  border-color: #e6a23c;
+  color: #e6a23c;
+}
+
+.wly-button--solid.wly-button--danger {
+  border-color: #f56c6c;
+  color: #f56c6c;
+}
+
+.shadow {
+  box-shadow: 20px 38px 34px -26px rgba(0, 0, 0, 0.2);
+}
+
+.shadow:hover {
+  box-shadow: 2px 8px 4px -6px rgba(0, 0, 0, 0.3);
+}

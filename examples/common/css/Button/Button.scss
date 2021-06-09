@@ -1,0 +1,86 @@
+@import './ButtonFunc.scss';
+.wly-button{
+    font-family: 'FZSJ-ZHIWNDXSG','PatrickHandSC', cursive;
+    
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
+    align-self: center;
+    padding: .6rem .8rem;
+    // padding: 1rem 1rem;   //大中小  2rem 1.5rem 1rem padding可以改成0.8
+    font-size: 1.5rem;
+    margin: 1rem 1rem;  //margin最后记得去掉
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+    letter-spacing: 1px;
+    outline: none;
+    color: $default;
+    border-color: $default;
+    border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+
+    &.mini{
+        padding: .6rem .8rem;
+        font-size: 1.2rem;
+    }
+    &.large{
+        padding: 1rem;
+        font-size: 2rem;
+    }
+    // &.plain{
+    //     background: transparent;
+    //     color: #41403E;
+    //     &.thick{
+    //         @include is-thick(solid,true);
+    //     }
+        
+    //     // 循环遍历各种border
+    //     @each $item in $style-arr{
+    //         &.#{$item}{
+    //             @include is-thick($item,false);
+    //             &.thick{
+    //                 @include is-thick($item,true);
+    //             }
+    //         }
+    //     }
+
+    //     @each $key,$val in $colors-list{
+    //         &.wly-button--#{$key} {
+    //           border-color: #{$val};
+    //           color: #{$val};
+    //         }
+    //       }
+    // }
+}
+
+//遍历各颜色
+@each $key,$val in $colors-list{
+    .wly-button--#{$key} {
+      background-color: #{$val};
+      border-color: #{$val};
+      color: white;
+    }
+  }
+
+
+//遍历各种border,当plain有参数时，plain优先
+@each $item in $style-arr{
+    .wly-button--#{$item}{
+        background: transparent;
+        @include is-thick($item,false);
+        &.thick{
+            @include is-thick($item,true);
+        }
+        @each $key,$val in $colors-list{
+            &.wly-button--#{$key} {
+              border-color: #{$val};
+              color: #{$val};
+            //   background: transparent;
+            }
+          }
+    }
+}
+.shadow {
+    box-shadow: 20px 38px 34px -26px rgba(0, 0, 0, 0.2);
+}
+.shadow:hover{
+    box-shadow: 2px 8px 4px -6px rgba(0, 0, 0, 0.3);
+}

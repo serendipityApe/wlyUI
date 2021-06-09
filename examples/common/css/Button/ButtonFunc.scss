@@ -1,0 +1,22 @@
+$style-arr: dotted,dashed,double,solid;
+$primary: #409eff;
+$success: #67c23a;
+$warning: #e6a23c;
+$danger: #f56c6c;
+$default: #41403E;
+$colors-list:(
+    primary: $primary,
+    success: $success,
+    warning: $warning,
+    danger: $danger,
+);
+
+@mixin is-thick($type:solid,$thick:null){
+    @if ($thick){
+        border-width: 5px;
+    } @else{
+        border-width: 2px;
+        
+    }
+    border-style: $type;
+}
