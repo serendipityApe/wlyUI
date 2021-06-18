@@ -1,14 +1,19 @@
 <template>
-  <button
-    @click="handleClick"
-    :class="['wly-button',`wly-button--${type}`,(plain ? `wly-button--${plain}` : ''),(size ?`${size}` :``),{shadow},{thick},]"
-  >
-    <slot></slot>
+    <button
+      @click="handleClick"
+      :class="['wly-button',`wly-button--${type}`,(plain ? `wly-button--${plain}` : ''),(size ?`${size}` :``),{shadow},{thick},]"
+    >
+    <wly-icon v-if="icon" :icon="icon"></wly-icon>
+    <span><slot></slot></span>
   </button>
 </template>
 <script>
+import wlyIcon from'../Icon/Icon.vue'
   export default{
     name: 'wlyButton',
+    components:{
+      wlyIcon
+    },
     props: {
       type: {
         type: String,
@@ -19,7 +24,7 @@
       },
       icon: {
         type: String,
-        default: '' //还没写
+        default:'',
       },
       thick: Boolean,
       shadow: Boolean,  //显示阴影

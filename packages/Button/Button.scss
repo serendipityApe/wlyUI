@@ -2,6 +2,7 @@
 .wly-button{
     font-family: 'FZSJ-ZHIWNDXSG','PatrickHandSC', cursive;
     
+    word-spacing: -5px;  //icon默认间距
     -webkit-align-self: center;
     -ms-flex-item-align: center;
     align-self: center;
@@ -49,6 +50,7 @@
     //         }
     //       }
     // }
+    // [class=]
 }
 
 //遍历各颜色
