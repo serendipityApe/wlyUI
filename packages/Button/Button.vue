@@ -1,7 +1,7 @@
 <template>
     <button
       @click="handleClick"
-      :class="['wly-button',`wly-button--${type}`,(plain ? `wly-button--${plain}` : ''),(size ?`${size}` :``),{shadow},{thick},]"
+      :class="['wly-button',`wly-button--${type}`,(plain ? `wly-button--${plain}` : ''),(size ?`${size}` :``),{shadow},{thick},{disabled}]"
     >
     <wly-icon v-if="icon" :icon="icon"></wly-icon>
     <span><slot></slot></span>
@@ -28,6 +28,7 @@ import wlyIcon from'../Icon/Icon.vue'
       },
       thick: Boolean,
       shadow: Boolean,  //显示阴影
+      disabled:Boolean,
       plain: {
         type: String, //dotted dashed double
       },

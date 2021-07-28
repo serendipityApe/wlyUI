@@ -9,7 +9,7 @@
     <wly-button type="primary">主要按钮</wly-button>
     <wly-button type="success">成功按钮</wly-button>
     <wly-button type="warning">警告按钮</wly-button>
-    <wly-button type="danger">危险按钮</wly-button>
+    <wly-button type="danger">危险按钮<i class="icon-search"></i></wly-button>
   </div>
   <div class="m-10">
     <wly-button plain="solid">按钮</wly-button>
@@ -69,7 +69,7 @@
     <wly-button type="danger" disabled>危险按钮</wly-button>
   </div>
   <div class="m-10">
-    <wly-button plain disabled>朴素按钮</wly-button>
+    <wly-button plain="double" disabled>朴素按钮</wly-button>
     <wly-button type="primary" plain disabled>主要按钮</wly-button>
     <wly-button type="success" plain disabled>成功按钮</wly-button>
     <wly-button type="info" plain disabled>信息按钮</wly-button>
@@ -90,7 +90,7 @@
   <wly-button type="danger" disabled>危险按钮</wly-button>
 </div>
 <div class="m-10">
-  <wly-button plain disabled>朴素按钮</wly-button>
+  <wly-button plain="double" disabled>朴素按钮</wly-button>
   <wly-button type="primary" plain disabled>主要按钮</wly-button>
   <wly-button type="success" plain disabled>成功按钮</wly-button>
   <wly-button type="info" plain disabled>信息按钮</wly-button>
@@ -127,7 +127,7 @@
 
 ### 不同尺寸
 
-Button 组件提供除了默认值以外的三种尺寸，可以在不同场景下选择合适的按钮尺寸。
+Button 组件提供除了默认值以外的两种尺寸，可以在不同场景下选择合适的按钮尺寸。
 额外的尺寸：```mini```、```large```，通过设置```size```属性来配置它们。
 <div class="demo-block">
   <wly-button size="mini">小型按钮</wly-button>
@@ -153,3 +153,4 @@ Button 组件提供除了默认值以外的三种尺寸，可以在不同场景�
 | plain     | 是否朴素按钮   | string    | solid,double,dotted,dashed |  —  |
 | disabled  | 是否禁用状态    | boolean   | —   | false   |
 | icon  | 图标，已有的图标库中的图标名 | string   |  —  |  —  |
+| shadow  | 是否显示阴影   |  boolean | —  |  false|
