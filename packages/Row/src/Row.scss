@@ -1,0 +1,30 @@
+@import '../../common/common.scss';
+.wly-row{
+    position: relative;
+    box-sizing: border-box;
+    &:after,
+    &:before {
+        content: "";
+        display: block;
+        clear: both;
+    }
+    &.wly-row--flex{
+        display: flex;
+        &:before,
+        &:after {
+            display: none;
+        }
+        //遍历justify
+        @each $key,$val in $row-list{
+            &.is-justify-#{$key} {
+                justify-content: $val;
+            }
+        }
+        &.is-align-middle {
+            align-items: center;
+        }
+        &.is-align-bottom {
+            align-items: flex-end;
+        }
+    }
+}

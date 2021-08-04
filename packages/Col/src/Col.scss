@@ -1,0 +1,97 @@
+.wly-col-1, .wly-col-2, .wly-col-3, .wly-col-4, .wly-col-5, .wly-col-6, .wly-col-7, .wly-col-8, .wly-col-9, .wly-col-10, .wly-col-11, .wly-col-12, .wly-col-13, .wly-col-14, .wly-col-15, .wly-col-16, .wly-col-17, .wly-col-18, .wly-col-19, .wly-col-20, .wly-col-21, .wly-col-22, .wly-col-23, .wly-col-24 {
+    float: left;
+    box-sizing: border-box;
+}
+.wly-col-0 {
+    width: 0;
+  }
+
+@for $i from 0 to 24 {
+.wly-col-#{$i} {
+    width: calc(1 / 24 * #{$i} * 100 * 1%);
+}
+.wly-col-offset-#{$i} {
+    margin-left: calc(1 / 24 * #{$i} * 100 * 1%);
+}
+.wly-col-pull-#{$i} {
+    position: relative;
+    right: calc(1 / 24 * #{$i} * 100 * 1%);
+}
+.wly-col-push-#{$i} {
+    position: relative;
+    left: calc(1 / 24 * #{$i} * 100 * 1%);
+}
+} 
+@media (max-width: 768px) {
+  @for $i from 0 to 24 {
+    .wly-col-xs-#{$i} {
+      width: calc(1 / 24 * #{$i} * 100 * 1%);
+    }
+    .wly-col-xs-offset-#{$i} {
+      margin-left: calc(1 / 24 * #{$i} * 100 * 1%);
+    }
+    .wly-col-xs-pull-#{$i} {
+      position: relative;
+      right: calc(1 / 24 * #{$i} * 100 * 1%);
+    }
+    .wly-col-xs-push-#{$i} {
+      position: relative;
+      left: calc(1 / 24 * #{$i} * 100 * 1%);
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  @for $i from 0 to 24 {
+    .wly-col-sm-#{$i} {
+      width: calc(1 / 24 * #{$i} * 100 * 1%);
+    }
+    .wly-col-sm-offset-#{$i} {
+      margin-left: calc(1 / 24 * #{$i} * 100 * 1%);
+    }
+    .wly-col-sm-pull-#{$i} {
+      position: relative;
+      right: calc(1 / 24 * #{$i} * 100 * 1%);
+    }
+    .wly-col-sm-push-#{$i} {
+      position: relative;
+      left: calc(1 / 24 * #{$i} * 100 * 1%);
+    }
+  }
+}
+@media (min-width: 992px) {
+  @for $i from 0 to 24 {
+    .wly-col-md-#{$i} {
+      width: calc(1 / 24 * #{$i} * 100 * 1%);
+    }
+    .wly-col-md-offset-#{$i} {
+      margin-left: calc(1 / 24 * #{$i} * 100 * 1%);
+    }
+    .wly-col-md-pull-#{$i} {
+      position: relative;
+      right: calc(1 / 24 * #{$i} * 100 * 1%);
+    }
+    .wly-col-md-push-#{$i} {
+      position: relative;
+      left: calc(1 / 24 * #{$i} * 100 * 1%);
+    }
+  }
+}
+@media (min-width: 1200px) {
+  @for $i from 0 to 24 {
+    .wly-col-lg-#{$i} {
+      width: calc(1 / 24 * #{$i} * 100 * 1%);
+    }
+    .wly-col-lg-offset-#{$i} {
+      margin-left: calc(1 / 24 * #{$i} * 100 * 1%);
+    }
+    .wly-col-lg-pull-#{$i} {
+      position: relative;
+      right: calc(1 / 24 * #{$i} * 100 * 1%);
+    }
+    .wly-col-lg-push-#{$i} {
+      position: relative;
+      left: calc(1 / 24 * #{$i} * 100 * 1%);
+    }
+  }
+}

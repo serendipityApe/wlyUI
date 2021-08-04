@@ -8,7 +8,7 @@
   </button>
 </template>
 <script>
-import wlyIcon from'../Icon/Icon.vue'
+import wlyIcon from'../../Icon/Icon.vue'
   export default{
     name: 'wlyButton',
     components:{
@@ -48,5 +48,5 @@ import wlyIcon from'../Icon/Icon.vue'
 
 <style lang="scss">
     @import './Button.scss';
-    @import '../common/font/font.css';
+    @import '../../common/font/font.css';
 </style>

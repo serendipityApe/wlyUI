@@ -11,6 +11,13 @@ $colors-list:(
     danger: $danger,
 );
 
+$row-list:(
+    center:center,
+    end: flex-end,
+    space-between: space-between,
+    space-around: space-around,
+);
+
 @mixin is-thick($type:solid,$thick:null){
     @if ($thick){
         border-width: 5px;

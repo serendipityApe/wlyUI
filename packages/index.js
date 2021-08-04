@@ -1,9 +1,13 @@
 import wlyButton from './button/index.js';
 import wlyIcon from './Icon/Index.js'
+import wlyRow from './Row/index.js';
+import wlyCol from './Col/index.js';
 
 const components = [
   wlyButton,
   wlyIcon,
+  wlyRow,
+  wlyCol
 ]
 
 const install = function(Vue) {
@@ -18,5 +22,7 @@ if (typeof window !== 'undefined' && window.Vue) {
 export default {
   install,
   wlyButton,
-  wlyIcon
+  wlyIcon,
+  wlyRow,
+  wlyCol,
 }

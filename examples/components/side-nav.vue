@@ -10,12 +10,25 @@
       margin-bottom: 32px;
     }
     .side-nav-title{
-      padding: 0 24px 8px;
-      color: #8DABC4;
-      font-size: 12px;
-      font-weight: bold;
+      padding: 8px 24px 8px 40px;
+      margin: 16px 0;
+      // color: #8DABC4;
+      font-size: 13px;
+      color: #00000073;
+      line-height: 1.5715;
+      transition: all .3s;
+      // font-weight: bold;
       letter-spacing: 1px;
       text-transform: uppercase;
+    }
+    .side-nav-title::after{
+      position: relative;
+      top: 12px;
+      display: block;
+      width: calc(100% - 20px);
+      height: 1px;
+      background: #f0f0f0;
+      content: "";
     }
     .side-nav-items{
       font-size: 14px;
@@ -24,23 +37,25 @@
       a{
         display: block;
         position: relative;
-        padding: 8px 24px;
+        padding-left: 40px;
         color: #3F536E;
         font-weight: normal;
-        line-height: 1.5;
+        line-height: 40px;
+        height: 40px;
         cursor: pointer;
       }
       .side-nav-group{
         display: block;
         position: relative;
-        padding: 6px 0 6px 24px;
+        padding: 6px 0 6px 40px;
         color: #2C405A;
         font-weight: bold;
       }
       .slid-nav-component{
         display: block;
         position: relative;
-        padding: 6px 24px 6px 32px;
+        // padding: 6px 24px 6px 40px;
+        padding-left: 56px;
         color: #616367;
         font-size: 14px;
       }
